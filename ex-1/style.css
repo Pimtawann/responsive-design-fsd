@@ -78,6 +78,10 @@ h3 {
 
 .job-item,
 .job-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   position: relative;
   width: 280px;
   height: 268px;
@@ -168,3 +172,61 @@ h3 {
 }
 
 /* Start coding here */
+
+.center-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.job-item, .job-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.arrow, .explore-more-arrow {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  left: auto;
+  transform: none;
+  margin: 0;
+  z-index: 2;
+}
+.job-more .explore-more-arrow {
+  bottom: 32px;
+}
+
+
+@media (max-width: 600px) {
+  .categories {
+    min-width: unset;
+    width: 100vw;
+    height: auto;
+    padding: 0 0.5rem;
+  }
+  .row-1,
+  .row-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .job-item,
+  .job-more {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 20px 10px;
+  }
+  .job-more {
+    padding: 0;
+  }
+  .arrow, .explore-more-arrow {
+    right: 12px;
+    bottom: 12px;
+  }
+  .job-more .explore-more-arrow {
+    bottom: 20px;
+  }
+}
