@@ -168,3 +168,70 @@ h3 {
 }
 
 /* Start coding here */
+@media (max-width: 768px) {
+  .row-1, .row-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .job-item, .job-more {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    padding: 20px;
+    margin: 10px 0;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 50px;
+  }
+
+  .pic img {
+    width: 24px;
+    height: 24px;
+  }
+
+  h2, h4 {
+    position: static;
+    margin: 0;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+
+  h4 {
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+  }
+
+  .arrow {
+    position: static;
+    width: 24px;
+    height: 24px;
+    align-self: flex-end;
+  }
+
+  .job-more h3 {
+    position: static;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  .explore-more-arrow {
+    position: static;
+    width: 24px;
+    height: 24px;
+  }
+
+  .first-line, .second-line, .third-line, .fourth-line {
+    display: none;
+  }
+}
